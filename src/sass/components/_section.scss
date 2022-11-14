@@ -1,0 +1,16 @@
+.section {
+  position: relative;
+  z-index: 20;
+  &__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: $brown-clr;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+  }
+}

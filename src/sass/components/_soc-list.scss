@@ -1,0 +1,29 @@
+.soc-list {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.soc-list__link:focus,
+.soc-list__link:hover,
+.soc-list__link:active {
+  color: $pink-clr;
+  outline: none;
+  transition: color 250ms $animation;
+}
+
+.soc-list__icon {
+  fill: currentColor;
+}
+
+// <a href="" class="soc-list__link">
+//   <svg class="soc-list__icon" width="16" height="16">
+//     <use href="./images/icons.svg#icon-twitter"></use>
+//   </svg>
+// </a>

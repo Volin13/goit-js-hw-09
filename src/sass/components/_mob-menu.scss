@@ -1,0 +1,90 @@
+.mob-menu__button-open {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    top: 40px;
+    right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.mob-menu__button-close {
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    top: 10px;
+    right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.mob-menu__icon--open {
+  width: 30px;
+  height: 16px;
+}
+.mob-menu__icon--close {
+  width: 30px;
+  height: 32px;
+}
+.mob-menu {
+  display: none;
+}
+.mob-menu.is-mob-menu-open {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 16px;
+  background-color: #e5e2e3;
+  background-image: url('../images/mob-menu/mob-menu-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.mob-menu__nav {
+  position: relative;
+  margin: 0 auto;
+}
+.mob-menu__nav-list {
+  margin-top: 4vh;
+  font-family: 'Montserrat Alternates';
+  text-align: center;
+  font-weight: 500;
+  font-size: 4vh;
+}
+.mob-menu__nav-item {
+  &:not(:last-child) {
+    margin-bottom: 6vh;
+  }
+}
+.mob-menu__nav-link {
+  width: 174px;
+  height: 4vh;
+  margin: 0 auto;
+  line-height: 4vh;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: linear-gradient(rgba(248, 110, 103, 0.63) 0%, rgba(253, 86, 143, 0.86) 100%);
+    box-shadow: 0 7px 27px -2px rgb(253 88 140 / 35%);
+  }
+}

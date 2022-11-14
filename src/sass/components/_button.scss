@@ -1,0 +1,51 @@
+.button {
+  display: block;
+
+  width: 145px;
+  padding: 8px 0px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: $white-clr;
+
+  background-color: $pink-clr;
+  border: 1px solid $pink-clr;
+  border-radius: 25px;
+  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $pink-clr;
+    background-color: $white-clr;
+  }
+
+  &:active {
+    color: $white-clr;
+    background-color: $pink-clr;
+    box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+  }
+}
+.read-more-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}

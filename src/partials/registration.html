@@ -1,0 +1,76 @@
+<section class="registration container" id="registration">
+  <h2 class="section registration__title">Registration</h2>
+
+  <form class="registration__form">
+    <div class="registration__wrap">
+      <p class="registration__form__date">May 23, 11:00 New York</p>
+      <div class="registration__vl"></div>
+
+      <div class="registration__form__right-part">
+        <p class="registration__form__subtitle">Apply your personal info for registration</p>
+
+        <label>
+          <input
+            class="registration__form__input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+          />
+        </label>
+
+        <label>
+          <input
+            class="registration__form__input"
+            type="tel"
+            name="tel"
+            placeholder="Phone number"
+          />
+        </label>
+        <label>
+          <input class="registration__form__input" type="email" name="email" placeholder="Email" />
+        </label>
+      </div>
+
+      <button class="button registration__button" type="submit">Register</button>
+
+      <div class="registration__form__img2">
+        <picture>
+          <source
+            srcset="
+              ./images/registration_img/desktop_white_wave.png   1x,
+              ./images/registration_img/desktop_white_wave2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/registration_img/tablet_white_wave.png   1x,
+              ./images/registration_img/tablet_white_wave2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/registration_img/tablet_white_wave.png" alt="white decor" />
+        </picture>
+      </div>
+      <div class="registration__form__img3">
+        <picture>
+          <source
+            srcset="
+              ./images/registration_img/desktop_mini_donuts.png   1x,
+              ./images/registration_img/desktop_mini_donuts2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/registration_img/tablet_mini_donuts.png   1x,
+              ./images/registration_img/tablet_mini_donuts2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/registration_img/tablet_mini_donuts.png" alt="mini donuts" />
+        </picture>
+      </div>
+    </div>
+  </form>
+</section>
